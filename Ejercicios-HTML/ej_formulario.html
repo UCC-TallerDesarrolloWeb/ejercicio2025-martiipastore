@@ -11,33 +11,72 @@
     </style>
 </head>
 <body>
-<!--Cree un Formulario con los campos que se proponen a continuacion-->
+
+
+    <form>
+        <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
+        <fieldset>
+            <legend>Información Personal:</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="sexo" value="femenino">
+        <label for="femenino">Femenino</label><br>
+       
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Información de la Cuenta:</legend>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="confirm-password">Confirmar Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password"><br>
+
+        <label for="servicio">Tipo de servicio:</label>
+        <select id="servicio" name="servicio">
+            <option value="free">Free</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select><br>
+        </fieldset>
+    <fieldset>
+  <legend>Preferencias:</legend>
+  <label>Tema:</label>
+  
+  <div style="display:flex; gap:20px; margin-top:8px;">
+    <label><input type="checkbox" id="politica" name="tema" value="politica"> Política</label>
+    <label><input type="checkbox" id="negocios" name="tema" value="negocios"> Negocios</label>
+    <label><input type="checkbox" id="tecnologia" name="tema" value="tecnologia"> Tecnología</label>
+    <label><input type="checkbox" id="salud" name="tema" value="salud"> Salud</label>
+  </div>
+
+        <label for="comentario"></label>Agregue un comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br>
+        </fieldset>
+        <button type="submit">Enviar</button>
+
+    </form>
+
+<!-- radio - una sola opcion checkbox- mas de una opcion 
+ Cree un Formulario con los campos que se proponen a continuacion-->
 <!--Agregue el atributo legend-->
 
 <!--Si tienes dudas de como hacer un formulario, puedes consultar:
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
-
-<h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
-
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
-
-Agregue un comentario:
-
-Boton de Enviar
-
 
 </body>
 </html>
